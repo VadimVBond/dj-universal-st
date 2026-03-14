@@ -1,0 +1,31 @@
+{% extends 'layouts/base.html' %}
+{% block title %}UI Gallery{% endblock %}
+{% block content %}
+<h1>UI Components Gallery</h1>
+<div class="filter-buttons mb-4">
+  <button onclick="filterUI('all')">All</button>
+  {% for lib in ['tailwind','bootstrap','flowbite','daisyui','preline'] %}
+    <button onclick="filterUI('{{ lib }}')">{{ lib|title }}</button>
+  {% endfor %}
+</div>
+<div class="gallery grid grid-cols-2 gap-4">
+  {% for lib in ['tailwind','bootstrap','flowbite','daisyui','preline'] %}
+    {% for i in [1,2] %}
+    <div class="gallery-item {{ lib }}">
+      <img src="{% static 'images/' + lib + str(i) + '.png' %}" alt="{{ lib }} {{ i }}">
+      <p>{{ lib|title }} Component {{ i }}</p>
+    </div>
+    {% endfor %}
+  {% endfor %}
+</div>
+<script>
+function filterUI(ui) {
+  const items = document.querySelectorAll('.gallery-item');
+  items.forEach(item => { item.style.display = (ui==='all'||item.classList.contains(ui))?'block':'none'; });
+}
+</script>
+<style>
+.gallery-item { text-align:center; } .gallery-item img { width:100%; max-width:300px; border-radius:8px; }
+.filter-buttons button { margin-right:8px; padding:4px 8px; cursor:pointer; }
+</style>
+{% endblock %}
