@@ -1,1 +1,11 @@
-# asgi.py placeholder
+"""ASGI config for the project."""
+from __future__ import annotations
+
+import os
+
+from django.core.asgi import get_asgi_application
+
+# Default to dev settings for local runserver.
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings.dev")
+
+application = get_asgi_application()

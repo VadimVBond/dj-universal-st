@@ -1,0 +1,41 @@
+[
+  {
+    "model": "blog.post",
+    "pk": 1,
+    "fields": {
+      "title": "Designing a clean blog layout",
+      "slug": "designing-a-clean-blog-layout",
+      "excerpt": "A quick guide to structuring a readable blog page with reusable sections.",
+      "content": "Start with a strong title and a short excerpt that sets context.\n\nUse consistent spacing and typography to keep the reading flow comfortable.\n\nBreak long text with subheadings, images, and callouts so readers can scan.",
+      "image": "",
+      "published": true,
+      "created_at": "2026-03-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 2,
+    "fields": {
+      "title": "Building with component blocks",
+      "slug": "building-with-component-blocks",
+      "excerpt": "How to assemble landing pages faster by composing small, focused blocks.",
+      "content": "Component blocks keep your UI consistent and easier to maintain.\n\nDefine a small set of shared blocks and reuse them across pages.\n\nWhen you need variations, extend the block instead of duplicating it.",
+      "image": "",
+      "published": true,
+      "created_at": "2026-03-05T14:30:00Z"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 3,
+    "fields": {
+      "title": "Organizing your static assets",
+      "slug": "organizing-your-static-assets",
+      "excerpt": "A simple folder strategy for CSS, JavaScript, and images in Django projects.",
+      "content": "Keep CSS, JS, and images in predictable folders so templates stay clean.\n\nUse descriptive names for assets and avoid deep nesting.\n\nThis makes it easier to onboard new contributors and track changes.",
+      "image": "",
+      "published": true,
+      "created_at": "2026-03-10T09:15:00Z"
+    }
+  }
+]

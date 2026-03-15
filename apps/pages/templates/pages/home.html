@@ -1,6 +1,94 @@
 {% extends 'layouts/base.html' %}
+{% load static %}
 {% block title %}Home{% endblock %}
 {% block content %}
-<h1>Landing Home</h1>
-<p>Добро пожаловать в универсальный Django starter с UI Demo!</p>
+<section class="max-w-6xl mx-auto px-4 py-12">
+    <div class="mb-10">
+        <p class="text-sm uppercase tracking-[0.3em] text-gray-400">Landing Home</p>
+        <h1 class="mt-3 text-3xl font-semibold text-gray-900 sm:text-4xl">
+            Галерея с фильтрами
+        </h1>
+        <p class="mt-3 max-w-2xl text-base text-gray-600">
+            Добро пожаловать в универсальный Django starter. Ниже — готовая галерея с фильтрацией по категориям.
+        </p>
+    </div>
+
+    <div class="flex flex-wrap gap-3">
+        <button
+            class="gallery-filter rounded-full border border-gray-300 bg-gray-900 px-4 py-2 text-sm font-medium text-white transition hover:border-gray-900"
+            data-filter="all"
+            type="button"
+        >
+            Все
+        </button>
+        {% for category in gallery_categories %}
+        <button
+            class="gallery-filter rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition hover:border-gray-900 hover:text-gray-900"
+            data-filter="{{ category }}"
+            type="button"
+        >
+            {{ category }}
+        </button>
+        {% endfor %}
+    </div>
+
+    <div id="gallery-grid" class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {% for item in gallery_items %}
+        <article class="gallery-item group" data-category="{{ item.category }}">
+            <div class="aspect-[4/3] overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 shadow-sm">
+                <img
+                    src="{% static item.image %}"
+                    alt="{{ item.title }}"
+                    class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                    loading="lazy"
+                >
+            </div>
+            <div class="mt-4">
+                <div class="text-xs uppercase tracking-[0.2em] text-gray-400">{{ item.category }}</div>
+                <h3 class="mt-2 text-lg font-semibold text-gray-900">{{ item.title }}</h3>
+                <p class="mt-2 text-sm text-gray-600">{{ item.description }}</p>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+
+    <p id="gallery-empty" class="mt-10 hidden text-center text-sm text-gray-500">
+        Нет элементов в выбранной категории.
+    </p>
+</section>
+
+<script>
+    // Filter gallery items by selected category.
+    document.addEventListener("DOMContentLoaded", () => {
+        const buttons = document.querySelectorAll(".gallery-filter");
+        const items = document.querySelectorAll(".gallery-item");
+        const emptyState = document.getElementById("gallery-empty");
+
+        const applyFilter = (filter) => {
+            let visibleCount = 0;
+            items.forEach((item) => {
+                const matches = filter === "all" || item.dataset.category === filter;
+                item.classList.toggle("hidden", !matches);
+                if (matches) {
+                    visibleCount += 1;
+                }
+            });
+            emptyState.classList.toggle("hidden", visibleCount > 0);
+        };
+
+        buttons.forEach((button) => {
+            button.addEventListener("click", () => {
+                buttons.forEach((btn) => {
+                    btn.classList.remove("bg-gray-900", "text-white");
+                    btn.classList.add("bg-white", "text-gray-700");
+                });
+                button.classList.add("bg-gray-900", "text-white");
+                button.classList.remove("bg-white", "text-gray-700");
+                applyFilter(button.dataset.filter);
+            });
+        });
+
+        applyFilter("all");
+    });
+</script>
 {% endblock %}

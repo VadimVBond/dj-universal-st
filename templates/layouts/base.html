@@ -1,23 +1,27 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>{% block title %}Starter{% endblock %}</title>
-<link id="theme-css" rel="stylesheet" href="{% static 'css/themes/tailwind.css' %}">
-<script>
-function switchTheme(theme){
-    document.getElementById('theme-css').href='/static/css/themes/'+theme+'.css';
-}
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Starter{% endblock %}</title>
+    {% block theme_css %}
+        <link id="theme-css" rel="stylesheet" href="{% static 'css/themes/tailwind.css' %}?v=20260315">
+    {% endblock %}
+    {% block extra_head %}{% endblock %}
+    <script>
+        const THEME_VERSION = '20260315';
+        function switchTheme(theme) {
+            document.getElementById('theme-css').href = '/static/css/themes/' + theme + '.css?v=' + THEME_VERSION;
+        }
+    </script>
 </head>
-<body>
-<nav>
-<button onclick="switchTheme('tailwind')">Tailwind</button>
-<button onclick="switchTheme('bootstrap')">Bootstrap</button>
-<button onclick="switchTheme('flowbite')">Flowbite</button>
-<button onclick="switchTheme('daisyui')">DaisyUI</button>
-<button onclick="switchTheme('preline')">Preline</button>
-</nav>
-{% block content %}{% endblock %}
+<body class="bg-white text-gray-900">
+    {% include "components/navbar.html" %}
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    {% include "components/footer.html" %}
+    {% block extra_scripts %}{% endblock %}
 </body>
 </html>

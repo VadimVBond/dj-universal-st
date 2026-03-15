@@ -1,1 +1,29 @@
-# list.html placeholder
+{% extends "layouts/base.html" %}
+
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+<section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+                <p class="text-sm uppercase tracking-wide text-gray-500">Blog</p>
+                <h1 class="text-3xl font-semibold">Latest posts</h1>
+            </div>
+            <p class="text-sm text-gray-600">Thoughts, updates, and build notes.</p>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {% if posts %}
+                {% for post in posts %}
+                    {% include "blog/post_card.html" %}
+                {% endfor %}
+            {% else %}
+                <div class="rounded-lg border border-dashed p-6 text-sm text-gray-600">
+                    No published posts yet. Add one in the admin and mark it as published.
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% endblock %}

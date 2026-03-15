@@ -1,23 +1,36 @@
+{% load static %}
 <!-- templates/components/navbar.html -->
 <nav class="bg-white dark:bg-gray-900 shadow">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-16">
       <div class="flex">
         <a href="/" class="flex-shrink-0 flex items-center">
-          <img class="h-8 w-auto" src="{% static 'images/logo.png' %}" alt="Logo">
+          <img class="h-8 w-auto" src="{% static 'images/logo.svg' %}" alt="Logo">
         </a>
-        <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
+        <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8 items-center">
           <a href="/" class="text-gray-900 dark:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
           <a href="/blog/" class="text-gray-900 dark:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</a>
           <a href="/gallery/" class="text-gray-900 dark:text-white px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
+
+          <details class="relative">
+            <summary class="list-none cursor-pointer text-gray-900 dark:text-white px-3 py-2 rounded-md text-sm font-medium inline-flex items-center gap-1">
+              UI Kit
+              <span class="text-xs">▾</span>
+            </summary>
+            <div class="absolute left-0 mt-2 w-52 rounded-md border border-gray-200 bg-white shadow-lg">
+              <div class="py-2 text-sm">
+                <a href="/ui/tailwind/" class="block px-4 py-2 hover:bg-gray-50">Tailwind</a>
+                <a href="/ui/bootstrap/" class="block px-4 py-2 hover:bg-gray-50">Bootstrap</a>
+                <a href="/ui/flowbite/" class="block px-4 py-2 hover:bg-gray-50">Flowbite</a>
+                <a href="/ui/preline/" class="block px-4 py-2 hover:bg-gray-50">Preline</a>
+                <a href="/ui/daisyui/" class="block px-4 py-2 hover:bg-gray-50">Daisy</a>
+              </div>
+            </div>
+          </details>
         </div>
       </div>
       <div class="flex items-center space-x-2">
-        <!-- Переключатель темы -->
-        <button id="theme-toggle" aria-label="Toggle Theme"
-                class="bg-gray-200 dark:bg-gray-700 p-2 rounded-md focus:outline-none focus:ring">
-          🌓
-        </button>
+        {% include "components/theme_switcher.html" %}
       </div>
     </div>
   </div>

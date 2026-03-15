@@ -1,1 +1,13 @@
-# package.json placeholder
+{
+  "name": "dj-universal-st-frontend",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -c tailwind.config.js -i ./src/tailwind.css -o ../static/css/themes/tailwind.css --minify",
+    "watch": "tailwindcss -c tailwind.config.js -i ./src/tailwind.css -o ../static/css/themes/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17",
+    "postcss": "^8.4.38",
+    "autoprefixer": "^10.4.19"
+  }
+}

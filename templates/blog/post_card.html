@@ -1,0 +1,20 @@
+<article class="border rounded-lg overflow-hidden bg-white">
+    {% if post.image %}
+        <a href="{{ post.get_absolute_url }}" class="block">
+            <img src="{{ post.image.url }}" alt="{{ post.title }}" class="h-44 w-full object-cover">
+        </a>
+    {% endif %}
+    <div class="p-5">
+        <p class="text-xs uppercase text-gray-500">{{ post.created_at|date:"M j, Y" }}</p>
+        <h3 class="mt-2 text-lg font-semibold">
+            <a href="{{ post.get_absolute_url }}" class="hover:underline">{{ post.title }}</a>
+        </h3>
+        <p class="mt-2 text-sm text-gray-600">
+            {% if post.excerpt %}
+                {{ post.excerpt }}
+            {% else %}
+                {{ post.content|truncatewords:24 }}
+            {% endif %}
+        </p>
+    </div>
+</article>
