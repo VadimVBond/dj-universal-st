@@ -1,0 +1,10 @@
+site_name: "Универсальный шаблон на Django"
+site_description: "Документация проекта"
+site_author: ""
+nav:
+  - Главная: index.md
+  - Архитектура: architecture.md
+  - API: api.md
+
+theme:
+  name: mkdocs
