@@ -1,24 +1,25 @@
-<section class="py-16">
+{% load i18n %}
+<section class="component component-blog py-16">
     <div class="max-w-6xl mx-auto px-4">
         <div class="flex items-center justify-between">
-            <h2 class="text-2xl font-semibold">Blog Preview</h2>
-            <a class="text-sm text-gray-700" href="/blog/">Read more</a>
+            <h2 class="text-2xl font-semibold">{% trans "Blog Preview" %}</h2>
+            <a class="text-sm text-gray-700" href="/blog/">{% trans "Read more" %}</a>
         </div>
         <div class="mt-6 grid gap-6 md:grid-cols-3">
             <article class="border rounded p-5">
-                <p class="text-xs uppercase text-gray-500">Update</p>
-                <h3 class="mt-2 font-semibold">Build reusable sections</h3>
-                <p class="mt-2 text-sm text-gray-600">Create a clean landing layout with components.</p>
+                <p class="text-xs uppercase text-gray-500">{% trans "Update" %}</p>
+                <h3 class="mt-2 font-semibold">{% trans "Build reusable sections" %}</h3>
+                <p class="mt-2 text-sm text-gray-600">{% trans "Create a clean landing layout with components." %}</p>
             </article>
             <article class="border rounded p-5">
-                <p class="text-xs uppercase text-gray-500">Guide</p>
-                <h3 class="mt-2 font-semibold">Organize your templates</h3>
-                <p class="mt-2 text-sm text-gray-600">Keep pages, layouts, and components consistent.</p>
+                <p class="text-xs uppercase text-gray-500">{% trans "Guide" %}</p>
+                <h3 class="mt-2 font-semibold">{% trans "Organize your templates" %}</h3>
+                <p class="mt-2 text-sm text-gray-600">{% trans "Keep pages, layouts, and components consistent." %}</p>
             </article>
             <article class="border rounded p-5">
-                <p class="text-xs uppercase text-gray-500">News</p>
-                <h3 class="mt-2 font-semibold">Preview gallery content</h3>
-                <p class="mt-2 text-sm text-gray-600">Show a teaser grid linked to the gallery.</p>
+                <p class="text-xs uppercase text-gray-500">{% trans "News" %}</p>
+                <h3 class="mt-2 font-semibold">{% trans "Preview gallery content" %}</h3>
+                <p class="mt-2 text-sm text-gray-600">{% trans "Show a teaser grid linked to the gallery." %}</p>
             </article>
         </div>
     </div>

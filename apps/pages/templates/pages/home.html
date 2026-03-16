@@ -1,15 +1,15 @@
 {% extends 'layouts/base.html' %}
-{% load static %}
-{% block title %}Home{% endblock %}
+{% load static i18n %}
+{% block title %}{% trans "Home" %}{% endblock %}
 {% block content %}
 <section class="max-w-6xl mx-auto px-4 py-12">
     <div class="mb-10">
-        <p class="text-sm uppercase tracking-[0.3em] text-gray-400">Landing Home</p>
+        <p class="text-sm uppercase tracking-[0.3em] text-gray-400">{% trans "Landing Home" %}</p>
         <h1 class="mt-3 text-3xl font-semibold text-gray-900 sm:text-4xl">
-            Галерея с фильтрами
+            {% trans "Gallery with filters" %}
         </h1>
         <p class="mt-3 max-w-2xl text-base text-gray-600">
-            Добро пожаловать в универсальный Django starter. Ниже — готовая галерея с фильтрацией по категориям.
+            {% trans "Welcome to the universal Django starter. Below is a ready-made gallery with category filtering." %}
         </p>
     </div>
 
@@ -19,7 +19,7 @@
             data-filter="all"
             type="button"
         >
-            Все
+            {% trans "All" %}
         </button>
         {% for category in gallery_categories %}
         <button
@@ -53,7 +53,7 @@
     </div>
 
     <p id="gallery-empty" class="mt-10 hidden text-center text-sm text-gray-500">
-        Нет элементов в выбранной категории.
+        {% trans "No items in the selected category." %}
     </p>
 </section>
 

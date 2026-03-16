@@ -1,17 +1,49 @@
-<div class="flex items-center gap-2">
-    <button type="button" onclick="switchTheme('tailwind')"
-            class="px-2.5 py-1 text-xs font-semibold rounded border border-gray-300 text-gray-700 bg-gray-100 hover:bg-gray-200 dark:border-gray-700 dark:text-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700"
-            title="Tailwind">TW</button>
-    <button type="button" onclick="switchTheme('bootstrap')"
-            class="px-2.5 py-1 text-xs font-semibold rounded border border-gray-300 text-gray-700 bg-gray-100 hover:bg-gray-200 dark:border-gray-700 dark:text-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700"
-            title="Bootstrap">BS</button>
-    <button type="button" onclick="switchTheme('flowbite')"
-            class="px-2.5 py-1 text-xs font-semibold rounded border border-gray-300 text-gray-700 bg-gray-100 hover:bg-gray-200 dark:border-gray-700 dark:text-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700"
-            title="Flowbite">FB</button>
-    <button type="button" onclick="switchTheme('daisyui')"
-            class="px-2.5 py-1 text-xs font-semibold rounded border border-gray-300 text-gray-700 bg-gray-100 hover:bg-gray-200 dark:border-gray-700 dark:text-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700"
-            title="DaisyUI">DU</button>
-    <button type="button" onclick="switchTheme('preline')"
-            class="px-2.5 py-1 text-xs font-semibold rounded border border-gray-300 text-gray-700 bg-gray-100 hover:bg-gray-200 dark:border-gray-700 dark:text-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700"
-            title="Preline">PL</button>
+{% load i18n %}
+<div class="theme-switcher" role="group" aria-label="{% trans "Theme switcher" %}">
+    <div class="theme-switcher-variant theme-toggle--tailwind" data-ui-kit="tailwind">
+        <label class="theme-toggle theme-toggle--icon">
+            <input type="checkbox" class="theme-toggle-input" data-theme-toggle="checkbox" aria-label="{% trans "Toggle dark mode" %}">
+            <span class="theme-toggle-track">
+                <span class="theme-toggle-thumb"></span>
+            </span>
+            <span class="theme-toggle-icon theme-toggle-icon--sun">☀</span>
+            <span class="theme-toggle-icon theme-toggle-icon--moon">☾</span>
+        </label>
+    </div>
+
+    <div class="theme-switcher-variant theme-toggle--bootstrap" data-ui-kit="bootstrap">
+        <label class="theme-toggle">
+            <input type="checkbox" class="theme-toggle-input" data-theme-toggle="checkbox" aria-label="{% trans "Toggle dark mode" %}">
+            <span class="theme-toggle-track">
+                <span class="theme-toggle-thumb"></span>
+            </span>
+        </label>
+    </div>
+
+    <div class="theme-switcher-variant theme-toggle--flowbite" data-ui-kit="flowbite">
+        <label class="theme-toggle">
+            <input type="checkbox" class="theme-toggle-input" data-theme-toggle="checkbox" aria-label="{% trans "Toggle dark mode" %}">
+            <span class="theme-toggle-track">
+                <span class="theme-toggle-thumb"></span>
+            </span>
+            <span class="theme-toggle-icon">☾</span>
+        </label>
+    </div>
+
+    <div class="theme-switcher-variant theme-toggle--daisy" data-ui-kit="daisyui">
+        <label class="theme-toggle theme-toggle--stack">
+            <input type="checkbox" class="theme-toggle-input" data-theme-toggle="checkbox" aria-label="{% trans "Toggle dark mode" %}">
+            <span class="theme-toggle-pill"></span>
+        </label>
+    </div>
+
+    <div class="theme-switcher-variant theme-toggle--preline" data-ui-kit="preline">
+        <label class="theme-toggle theme-toggle--square">
+            <input type="checkbox" class="theme-toggle-input" data-theme-toggle="checkbox" aria-label="{% trans "Toggle dark mode" %}">
+            <span class="theme-toggle-track">
+                <span class="theme-toggle-thumb"></span>
+            </span>
+        </label>
+    </div>
 </div>
+

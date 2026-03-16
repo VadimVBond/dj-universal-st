@@ -1,0 +1,366 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: dj-universal-st\n"
+"POT-Creation-Date: 2026-03-16 00:00+0000\n"
+"PO-Revision-Date: 2026-03-16 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "Starter"
+msgstr "Стартовый"
+
+msgid "Logo"
+msgstr "Логотип"
+
+msgid "Home"
+msgstr "Главная"
+
+msgid "Blog"
+msgstr "Блог"
+
+msgid "Gallery"
+msgstr "Галерея"
+
+msgid "UI Kit"
+msgstr "UI набор"
+
+msgid "Tailwind"
+msgstr "Tailwind"
+
+msgid "Bootstrap"
+msgstr "Bootstrap"
+
+msgid "Flowbite"
+msgstr "Flowbite"
+
+msgid "Preline"
+msgstr "Preline"
+
+msgid "Daisy"
+msgstr "Daisy"
+
+msgid "Admin"
+msgstr "Админ"
+
+msgid "Sign in"
+msgstr "Вход"
+
+msgid "Sign up"
+msgstr "Регистрация"
+
+msgid "GitHub"
+msgstr "GitHub"
+
+msgid "Language switcher"
+msgstr "Переключатель языка"
+
+msgid "UI Kit switcher"
+msgstr "Переключатель UI набора"
+
+msgid "Theme switcher"
+msgstr "Переключатель темы"
+
+msgid "Toggle dark mode"
+msgstr "Переключить темную тему"
+
+msgid "Universal Django Starter"
+msgstr "Универсальный Django стартер"
+
+msgid "Launch a clean landing fast"
+msgstr "Быстрый запуск чистого лендинга"
+
+msgid "Reusable components, simple structure, and room to grow."
+msgstr "Переиспользуемые компоненты, простая структура и простор для роста."
+
+msgid "View Blog"
+msgstr "Смотреть блог"
+
+msgid "Explore Gallery"
+msgstr "Открыть галерею"
+
+msgid "Features"
+msgstr "Возможности"
+
+msgid "Build landing pages, galleries, and blogs in one place."
+msgstr "Создавайте лендинги, галереи и блоги в одном месте."
+
+msgid "Reusable blocks"
+msgstr "Переиспользуемые блоки"
+
+msgid "Compose pages from a growing set of components."
+msgstr "Собирайте страницы из растущего набора компонентов."
+
+msgid "Simple structure"
+msgstr "Простая структура"
+
+msgid "Apps and templates are organized by feature."
+msgstr "Приложения и шаблоны организованы по функционалу."
+
+msgid "Ready for content"
+msgstr "Готово для контента"
+
+msgid "Blog and gallery sections are prepared for data."
+msgstr "Разделы блога и галереи подготовлены для данных."
+
+msgid "Gallery with filters"
+msgstr "Галерея с фильтрами"
+
+msgid "View all"
+msgstr "Смотреть все"
+
+msgid "All"
+msgstr "Все"
+
+msgid "No items in the selected category."
+msgstr "Нет элементов в выбранной категории."
+
+msgid "Blog Preview"
+msgstr "Превью блога"
+
+msgid "Read more"
+msgstr "Читать дальше"
+
+msgid "Update"
+msgstr "Обновление"
+
+msgid "Build reusable sections"
+msgstr "Соберите переиспользуемые секции"
+
+msgid "Create a clean landing layout with components."
+msgstr "Создайте чистый лендинг на компонентах."
+
+msgid "Guide"
+msgstr "Гайд"
+
+msgid "Organize your templates"
+msgstr "Организуйте свои шаблоны"
+
+msgid "Keep pages, layouts, and components consistent."
+msgstr "Держите страницы, макеты и компоненты согласованными."
+
+msgid "News"
+msgstr "Новости"
+
+msgid "Preview gallery content"
+msgstr "Предпросмотр контента галереи"
+
+msgid "Show a teaser grid linked to the gallery."
+msgstr "Покажите тизерную сетку со ссылкой на галерею."
+
+msgid "Contact"
+msgstr "Контакты"
+
+msgid "Tell us about your project idea."
+msgstr "Расскажите о вашей идее проекта."
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Message"
+msgstr "Сообщение"
+
+msgid "Send message"
+msgstr "Отправить сообщение"
+
+msgid "Buttons"
+msgstr "Кнопки"
+
+msgid "Primary"
+msgstr "Основная"
+
+msgid "Secondary"
+msgstr "Вторичная"
+
+msgid "Ghost"
+msgstr "Прозрачная"
+
+msgid "Cards"
+msgstr "Карточки"
+
+msgid "A clean layout for quick launches."
+msgstr "Чистый макет для быстрых запусков."
+
+msgid "Showcase"
+msgstr "Витрина"
+
+msgid "Highlight products, projects, or ideas."
+msgstr "Подчеркните продукты, проекты или идеи."
+
+msgid "Scale"
+msgstr "Масштабирование"
+
+msgid "Extend with blog and gallery sections."
+msgstr "Расширяйте с разделами блога и галереи."
+
+msgid "Gallery Grid"
+msgstr "Сетка галереи"
+
+msgid "Landing Home"
+msgstr "Главная лендинга"
+
+msgid "Welcome to the universal Django starter. Below is a ready-made gallery with category filtering."
+msgstr "Добро пожаловать в универсальный Django стартер. Ниже — готовая галерея с фильтрацией по категориям."
+
+msgid "Latest posts"
+msgstr "Последние публикации"
+
+msgid "Thoughts, updates, and build notes."
+msgstr "Мысли, обновления и заметки по сборке."
+
+msgid "No published posts yet. Add one in the admin and mark it as published."
+msgstr "Пока нет опубликованных постов. Добавьте пост в админке и отметьте как опубликованный."
+
+msgid "Back to blog"
+msgstr "Назад к блогу"
+
+msgid "UI Tailwind"
+msgstr "UI Tailwind"
+
+msgid "Tailwind UI Demo"
+msgstr "Демо Tailwind UI"
+
+msgid "Success"
+msgstr "Успех"
+
+msgid "Danger"
+msgstr "Опасно"
+
+msgid "Clean layout for quick launches."
+msgstr "Чистый макет для быстрых запусков."
+
+msgid "Action"
+msgstr "Действие"
+
+msgid "Extend with blog and gallery."
+msgstr "Расширяйте блогом и галереей."
+
+msgid "Alerts"
+msgstr "Оповещения"
+
+msgid "Primary alert example."
+msgstr "Пример основного уведомления."
+
+msgid "Warning alert example."
+msgstr "Пример предупреждения."
+
+msgid "Navbar"
+msgstr "Навигация"
+
+msgid "Docs"
+msgstr "Документация"
+
+msgid "Pricing"
+msgstr "Цены"
+
+msgid "Login"
+msgstr "Войти"
+
+msgid "Grid"
+msgstr "Сетка"
+
+msgid "Col"
+msgstr "Колонка"
+
+msgid "Modal"
+msgstr "Модальное окно"
+
+msgid "Use Tailwind with your modal library of choice."
+msgstr "Используйте Tailwind с выбранной библиотекой модалок."
+
+msgid "Open modal"
+msgstr "Открыть модальное окно"
+
+msgid "UI Bootstrap"
+msgstr "UI Bootstrap"
+
+msgid "Bootstrap UI Demo"
+msgstr "Демо Bootstrap UI"
+
+msgid "Toggle navigation"
+msgstr "Переключить навигацию"
+
+msgid "Demo modal"
+msgstr "Демо модальное окно"
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "This is a Bootstrap modal example."
+msgstr "Это пример модального окна Bootstrap."
+
+msgid "Save changes"
+msgstr "Сохранить изменения"
+
+msgid "UI Flowbite"
+msgstr "UI Flowbite"
+
+msgid "Flowbite UI Demo"
+msgstr "Демо Flowbite UI"
+
+msgid "Flowbite modal"
+msgstr "Модальное окно Flowbite"
+
+msgid "This is a Flowbite modal example."
+msgstr "Это пример модального окна Flowbite."
+
+msgid "UI Preline"
+msgstr "UI Preline"
+
+msgid "Preline UI Demo"
+msgstr "Демо Preline UI"
+
+msgid "Preline components are Tailwind-based. This page uses Tailwind styling as a base."
+msgstr "Компоненты Preline основаны на Tailwind. Эта страница использует Tailwind как базовый стиль."
+
+msgid "Preline modals require JS initialization."
+msgstr "Модалки Preline требуют JS-инициализации."
+
+msgid "UI DaisyUI"
+msgstr "UI DaisyUI"
+
+msgid "DaisyUI Demo"
+msgstr "Демо DaisyUI"
+
+msgid "DaisyUI"
+msgstr "DaisyUI"
+
+msgid "DaisyUI modal"
+msgstr "Модальное окно DaisyUI"
+
+msgid "This is a DaisyUI modal example."
+msgstr "Это пример модального окна DaisyUI."
+
+msgid "UI Gallery"
+msgstr "Галерея UI"
+
+msgid "UI Components Gallery"
+msgstr "Галерея UI компонентов"
+
+msgid "%(lib_name)s Component %(index)s"
+msgstr "%(lib_name)s компонент %(index)s"
+
+msgid "Card 1"
+msgstr "Карточка 1"
+
+msgid "Card 2"
+msgstr "Карточка 2"
+
+msgid "Example"
+msgstr "Пример"
+
+msgid "Submit"
+msgstr "Отправить"
+
+msgid "Navbar Example"
+msgstr "Пример навбара"
+
+msgid "Languages"
+msgstr "Языки"

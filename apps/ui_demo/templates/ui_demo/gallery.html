@@ -1,9 +1,10 @@
 {% extends 'layouts/base.html' %}
-{% block title %}UI Gallery{% endblock %}
+{% load i18n static %}
+{% block title %}{% trans "UI Gallery" %}{% endblock %}
 {% block content %}
-<h1>UI Components Gallery</h1>
+<h1>{% trans "UI Components Gallery" %}</h1>
 <div class="filter-buttons mb-4">
-  <button onclick="filterUI('all')">All</button>
+  <button onclick="filterUI('all')">{% trans "All" %}</button>
   {% for lib in ['tailwind','bootstrap','flowbite','daisyui','preline'] %}
     <button onclick="filterUI('{{ lib }}')">{{ lib|title }}</button>
   {% endfor %}
@@ -13,7 +14,9 @@
     {% for i in [1,2] %}
     <div class="gallery-item {{ lib }}">
       <img src="{% static 'images/' + lib + str(i) + '.png' %}" alt="{{ lib }} {{ i }}">
-      <p>{{ lib|title }} Component {{ i }}</p>
+      <p>
+        {% blocktrans with lib_name=lib|title index=i %}{{ lib_name }} Component {{ index }}{% endblocktrans %}
+      </p>
     </div>
     {% endfor %}
   {% endfor %}

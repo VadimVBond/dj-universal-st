@@ -1,0 +1,366 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: dj-universal-st\n"
+"POT-Creation-Date: 2026-03-16 00:00+0000\n"
+"PO-Revision-Date: 2026-03-16 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Starter"
+msgstr "Starter"
+
+msgid "Logo"
+msgstr "Logo"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Gallery"
+msgstr "Gallery"
+
+msgid "UI Kit"
+msgstr "UI Kit"
+
+msgid "Tailwind"
+msgstr "Tailwind"
+
+msgid "Bootstrap"
+msgstr "Bootstrap"
+
+msgid "Flowbite"
+msgstr "Flowbite"
+
+msgid "Preline"
+msgstr "Preline"
+
+msgid "Daisy"
+msgstr "Daisy"
+
+msgid "Admin"
+msgstr "Admin"
+
+msgid "Sign in"
+msgstr "Sign in"
+
+msgid "Sign up"
+msgstr "Sign up"
+
+msgid "GitHub"
+msgstr "GitHub"
+
+msgid "Language switcher"
+msgstr "Language switcher"
+
+msgid "UI Kit switcher"
+msgstr "UI Kit switcher"
+
+msgid "Theme switcher"
+msgstr "Theme switcher"
+
+msgid "Toggle dark mode"
+msgstr "Toggle dark mode"
+
+msgid "Universal Django Starter"
+msgstr "Universal Django Starter"
+
+msgid "Launch a clean landing fast"
+msgstr "Launch a clean landing fast"
+
+msgid "Reusable components, simple structure, and room to grow."
+msgstr "Reusable components, simple structure, and room to grow."
+
+msgid "View Blog"
+msgstr "View Blog"
+
+msgid "Explore Gallery"
+msgstr "Explore Gallery"
+
+msgid "Features"
+msgstr "Features"
+
+msgid "Build landing pages, galleries, and blogs in one place."
+msgstr "Build landing pages, galleries, and blogs in one place."
+
+msgid "Reusable blocks"
+msgstr "Reusable blocks"
+
+msgid "Compose pages from a growing set of components."
+msgstr "Compose pages from a growing set of components."
+
+msgid "Simple structure"
+msgstr "Simple structure"
+
+msgid "Apps and templates are organized by feature."
+msgstr "Apps and templates are organized by feature."
+
+msgid "Ready for content"
+msgstr "Ready for content"
+
+msgid "Blog and gallery sections are prepared for data."
+msgstr "Blog and gallery sections are prepared for data."
+
+msgid "Gallery with filters"
+msgstr "Gallery with filters"
+
+msgid "View all"
+msgstr "View all"
+
+msgid "All"
+msgstr "All"
+
+msgid "No items in the selected category."
+msgstr "No items in the selected category."
+
+msgid "Blog Preview"
+msgstr "Blog Preview"
+
+msgid "Read more"
+msgstr "Read more"
+
+msgid "Update"
+msgstr "Update"
+
+msgid "Build reusable sections"
+msgstr "Build reusable sections"
+
+msgid "Create a clean landing layout with components."
+msgstr "Create a clean landing layout with components."
+
+msgid "Guide"
+msgstr "Guide"
+
+msgid "Organize your templates"
+msgstr "Organize your templates"
+
+msgid "Keep pages, layouts, and components consistent."
+msgstr "Keep pages, layouts, and components consistent."
+
+msgid "News"
+msgstr "News"
+
+msgid "Preview gallery content"
+msgstr "Preview gallery content"
+
+msgid "Show a teaser grid linked to the gallery."
+msgstr "Show a teaser grid linked to the gallery."
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Tell us about your project idea."
+msgstr "Tell us about your project idea."
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Message"
+msgstr "Message"
+
+msgid "Send message"
+msgstr "Send message"
+
+msgid "Buttons"
+msgstr "Buttons"
+
+msgid "Primary"
+msgstr "Primary"
+
+msgid "Secondary"
+msgstr "Secondary"
+
+msgid "Ghost"
+msgstr "Ghost"
+
+msgid "Cards"
+msgstr "Cards"
+
+msgid "A clean layout for quick launches."
+msgstr "A clean layout for quick launches."
+
+msgid "Showcase"
+msgstr "Showcase"
+
+msgid "Highlight products, projects, or ideas."
+msgstr "Highlight products, projects, or ideas."
+
+msgid "Scale"
+msgstr "Scale"
+
+msgid "Extend with blog and gallery sections."
+msgstr "Extend with blog and gallery sections."
+
+msgid "Gallery Grid"
+msgstr "Gallery Grid"
+
+msgid "Landing Home"
+msgstr "Landing Home"
+
+msgid "Welcome to the universal Django starter. Below is a ready-made gallery with category filtering."
+msgstr "Welcome to the universal Django starter. Below is a ready-made gallery with category filtering."
+
+msgid "Latest posts"
+msgstr "Latest posts"
+
+msgid "Thoughts, updates, and build notes."
+msgstr "Thoughts, updates, and build notes."
+
+msgid "No published posts yet. Add one in the admin and mark it as published."
+msgstr "No published posts yet. Add one in the admin and mark it as published."
+
+msgid "Back to blog"
+msgstr "Back to blog"
+
+msgid "UI Tailwind"
+msgstr "UI Tailwind"
+
+msgid "Tailwind UI Demo"
+msgstr "Tailwind UI Demo"
+
+msgid "Success"
+msgstr "Success"
+
+msgid "Danger"
+msgstr "Danger"
+
+msgid "Clean layout for quick launches."
+msgstr "Clean layout for quick launches."
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Extend with blog and gallery."
+msgstr "Extend with blog and gallery."
+
+msgid "Alerts"
+msgstr "Alerts"
+
+msgid "Primary alert example."
+msgstr "Primary alert example."
+
+msgid "Warning alert example."
+msgstr "Warning alert example."
+
+msgid "Navbar"
+msgstr "Navbar"
+
+msgid "Docs"
+msgstr "Docs"
+
+msgid "Pricing"
+msgstr "Pricing"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Grid"
+msgstr "Grid"
+
+msgid "Col"
+msgstr "Col"
+
+msgid "Modal"
+msgstr "Modal"
+
+msgid "Use Tailwind with your modal library of choice."
+msgstr "Use Tailwind with your modal library of choice."
+
+msgid "Open modal"
+msgstr "Open modal"
+
+msgid "UI Bootstrap"
+msgstr "UI Bootstrap"
+
+msgid "Bootstrap UI Demo"
+msgstr "Bootstrap UI Demo"
+
+msgid "Toggle navigation"
+msgstr "Toggle navigation"
+
+msgid "Demo modal"
+msgstr "Demo modal"
+
+msgid "Close"
+msgstr "Close"
+
+msgid "This is a Bootstrap modal example."
+msgstr "This is a Bootstrap modal example."
+
+msgid "Save changes"
+msgstr "Save changes"
+
+msgid "UI Flowbite"
+msgstr "UI Flowbite"
+
+msgid "Flowbite UI Demo"
+msgstr "Flowbite UI Demo"
+
+msgid "Flowbite modal"
+msgstr "Flowbite modal"
+
+msgid "This is a Flowbite modal example."
+msgstr "This is a Flowbite modal example."
+
+msgid "UI Preline"
+msgstr "UI Preline"
+
+msgid "Preline UI Demo"
+msgstr "Preline UI Demo"
+
+msgid "Preline components are Tailwind-based. This page uses Tailwind styling as a base."
+msgstr "Preline components are Tailwind-based. This page uses Tailwind styling as a base."
+
+msgid "Preline modals require JS initialization."
+msgstr "Preline modals require JS initialization."
+
+msgid "UI DaisyUI"
+msgstr "UI DaisyUI"
+
+msgid "DaisyUI Demo"
+msgstr "DaisyUI Demo"
+
+msgid "DaisyUI"
+msgstr "DaisyUI"
+
+msgid "DaisyUI modal"
+msgstr "DaisyUI modal"
+
+msgid "This is a DaisyUI modal example."
+msgstr "This is a DaisyUI modal example."
+
+msgid "UI Gallery"
+msgstr "UI Gallery"
+
+msgid "UI Components Gallery"
+msgstr "UI Components Gallery"
+
+msgid "%(lib_name)s Component %(index)s"
+msgstr "%(lib_name)s Component %(index)s"
+
+msgid "Card 1"
+msgstr "Card 1"
+
+msgid "Card 2"
+msgstr "Card 2"
+
+msgid "Example"
+msgstr "Example"
+
+msgid "Submit"
+msgstr "Submit"
+
+msgid "Navbar Example"
+msgstr "Navbar Example"
+
+msgid "Languages"
+msgstr "Languages"

@@ -1,11 +1,12 @@
-<section class="bg-gray-50 py-16">
+{% load i18n %}
+<section class="component component-hero bg-gray-50 py-16">
     <div class="max-w-6xl mx-auto px-4 text-center">
-        <p class="text-sm uppercase tracking-widest text-gray-500">Universal Django Starter</p>
-        <h1 class="mt-3 text-4xl md:text-5xl font-bold">Launch a clean landing fast</h1>
-        <p class="mt-4 text-lg text-gray-600">Reusable components, simple structure, and room to grow.</p>
+        <p class="text-sm uppercase tracking-widest text-gray-500">{% trans "Universal Django Starter" %}</p>
+        <h1 class="mt-3 text-4xl md:text-5xl font-bold">{% trans "Launch a clean landing fast" %}</h1>
+        <p class="mt-4 text-lg text-gray-600">{% trans "Reusable components, simple structure, and room to grow." %}</p>
         <div class="mt-8 flex flex-wrap justify-center gap-3">
-            <a class="px-5 py-3 bg-gray-900 text-white rounded" href="/blog/">View Blog</a>
-            <a class="px-5 py-3 border border-gray-300 rounded" href="/gallery/">Explore Gallery</a>
+            <a class="px-5 py-3 bg-gray-900 text-white rounded" href="/blog/">{% trans "View Blog" %}</a>
+            <a class="px-5 py-3 border border-gray-300 rounded" href="/gallery/">{% trans "Explore Gallery" %}</a>
         </div>
     </div>
 </section>

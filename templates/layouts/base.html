@@ -1,27 +1,31 @@
-{% load static %}
+{% load static i18n %}
+{% get_current_language as LANGUAGE_CODE %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ LANGUAGE_CODE }}" data-ui-kit="tailwind" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}Starter{% endblock %}</title>
+    <title>{% block title %}{% trans "Starter" %}{% endblock %}</title>
     {% block theme_css %}
         <link id="theme-css" rel="stylesheet" href="{% static 'css/themes/tailwind.css' %}?v=20260315">
     {% endblock %}
     {% block extra_head %}{% endblock %}
     <script>
         const THEME_VERSION = '20260315';
-        function switchTheme(theme) {
-            document.getElementById('theme-css').href = '/static/css/themes/' + theme + '.css?v=' + THEME_VERSION;
+        function switchUiKitCss(uiKit) {
+            document.getElementById('theme-css').href = '/static/css/themes/' + uiKit + '.css?v=' + THEME_VERSION;
         }
     </script>
 </head>
-<body class="bg-white text-gray-900">
+<body class="app-body">
     {% include "components/navbar.html" %}
     <main>
         {% block content %}{% endblock %}
     </main>
     {% include "components/footer.html" %}
+    <script src="{% static 'js/ui-kit-switcher.js' %}"></script>
+    <script src="{% static 'js/theme-switcher.js' %}"></script>
     {% block extra_scripts %}{% endblock %}
 </body>
 </html>
+
