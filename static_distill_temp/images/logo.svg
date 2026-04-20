@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160" height="48" viewBox="0 0 160 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="48" rx="10" fill="#111827"/>
+  <circle cx="26" cy="24" r="10" fill="#F59E0B"/>
+  <circle cx="38" cy="24" r="10" fill="#10B981" opacity="0.9"/>
+  <path d="M22 24C26 18 34 18 38 24C34 30 26 30 22 24Z" fill="#111827"/>
+  <text x="56" y="30" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#F9FAFB" font-weight="600">UNIVERSAL</text>
+</svg>

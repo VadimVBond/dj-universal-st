@@ -1,28 +1,31 @@
 {% load i18n %}
-<form class="language-switcher" action="{% url 'set_language' %}" method="post">
-  {% csrf_token %}
-  <input type="hidden" name="next" value="{{ request.get_full_path }}">
-  {% get_current_language as CURRENT_LANGUAGE %}
-  {% get_available_languages as LANGUAGES %}
-  {% get_language_info_list for LANGUAGES as languages %}
-  <div class="language-switcher__group" role="group" aria-label="{% trans "Language switcher" %}">
-    <div class="language-switcher-variant" data-ui-kit="tailwind">
+{% get_current_language as CURRENT_LANGUAGE %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
+
+{# Helper logic to determine base path for static links #}
+{# Since we are static, we mostly care about Home and Gallery #}
+
+<div class="language-switcher" role="group" aria-label="{% trans "Language switcher" %}">
+  <div class="language-switcher__group">
+    
+    {# Variant for Tailwind #}
+    <div class="language-switcher-variant flex gap-2" data-ui-kit="tailwind">
       {% for language in languages %}
-        <button
+        <a
+          href="/{{ language.code }}/"
           class="nav-action language-switcher__btn language-switcher__flag-btn{% if language.code == CURRENT_LANGUAGE %} is-active{% endif %}"
-          type="submit"
-          name="language"
-          value="{{ language.code }}"
           aria-label="{{ language.name_local }}"
           title="{{ language.name_local }}"
         >
           <span class="language-switcher__flag" aria-hidden="true">
             {% if language.code == "en" %}🇺🇸{% elif language.code == "ru" %}🇷🇺{% elif language.code == "uk" %}🇺🇦{% else %}{{ language.code|upper }}{% endif %}
           </span>
-        </button>
+        </a>
       {% endfor %}
     </div>
 
+    {# Variant for Bootstrap #}
     <details class="language-switcher__dropdown language-switcher-variant" data-ui-kit="bootstrap">
       <summary class="nav-action language-switcher__summary" title="{% trans "Language switcher" %}">
         <span class="language-switcher__globe" aria-hidden="true">🌍</span>
@@ -30,60 +33,54 @@
       </summary>
       <div class="language-switcher__menu">
         {% for language in languages %}
-          <button
+          <a
+            href="/{{ language.code }}/"
             class="nav-action language-switcher__menu-btn{% if language.code == CURRENT_LANGUAGE %} is-active{% endif %}"
-            type="submit"
-            name="language"
-            value="{{ language.code }}"
             title="{{ language.name_local }}"
           >
             <span>{{ language.name_local }}</span>
             <span>{{ language.code|upper }}</span>
-          </button>
+          </a>
         {% endfor %}
       </div>
     </details>
 
-    <div class="language-switcher-variant" data-ui-kit="flowbite">
+    {# Variant for Flowbite/DaisyUI #}
+    <div class="language-switcher-variant flex gap-2" data-ui-kit="flowbite">
       {% for language in languages %}
-        <button
+        <a
+          href="/{{ language.code }}/"
           class="nav-action language-switcher__btn language-switcher__chip-btn{% if language.code == CURRENT_LANGUAGE %} is-active{% endif %}"
-          type="submit"
-          name="language"
-          value="{{ language.code }}"
           title="{{ language.name_local }}"
         >
           {{ language.code|upper }}
-        </button>
+        </a>
       {% endfor %}
     </div>
 
-    <div class="language-switcher-variant" data-ui-kit="daisyui">
+    <div class="language-switcher-variant flex gap-2" data-ui-kit="daisyui">
       {% for language in languages %}
-        <button
+        <a
+          href="/{{ language.code }}/"
           class="nav-action language-switcher__btn language-switcher__chip-btn{% if language.code == CURRENT_LANGUAGE %} is-active{% endif %}"
-          type="submit"
-          name="language"
-          value="{{ language.code }}"
           title="{{ language.name_local }}"
         >
           {{ language.code|upper }}
-        </button>
+        </a>
       {% endfor %}
     </div>
 
-    <div class="language-switcher-variant" data-ui-kit="preline">
+    {# Variant for Preline #}
+    <div class="language-switcher-variant flex gap-2" data-ui-kit="preline">
       {% for language in languages %}
-        <button
+        <a
+          href="/{{ language.code }}/"
           class="nav-action language-switcher__btn language-switcher__text-btn{% if language.code == CURRENT_LANGUAGE %} is-active{% endif %}"
-          type="submit"
-          name="language"
-          value="{{ language.code }}"
           title="{{ language.name_local }}"
         >
           {{ language.name_local }}
-        </button>
+        </a>
       {% endfor %}
     </div>
   </div>
-</form>
+</div>
