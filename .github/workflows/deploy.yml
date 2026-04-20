@@ -38,6 +38,7 @@ jobs:
         run: |
           python manage.py collectstatic --noinput
           echo "yes" | python manage.py distill-local
+          mkdocs build -d dist/docs
           touch ./dist/.nojekyll
           
       - name: Upload artifact
